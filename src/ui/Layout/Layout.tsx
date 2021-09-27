@@ -1,10 +1,10 @@
 import Header from '../Header/Header';
 
-const Layout = (props: any) => {
+const Layout: React.FC<{}> = (props) => {
   return (
     <>
       <Header />
-      <main>{props.chidlren}</main>
+      <main>{props.children}</main>
       <footer></footer>
     </>
   );
