@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (min-width: 320px) {
+  .header {
+    margin-top: 5rem;
+    margin-bottom: 72px;
+  }
+
+  .logo {
+    width: 180px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    margin-top: 5rem;
+    margin-bottom: 100px;
+  }
+  .logo {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    margin-top: 5rem;
+    margin-bottom: 102px;
+  }
+  .logo {
+    width: 300px;
+  }
+}
