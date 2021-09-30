@@ -1,18 +1,24 @@
-import { render, screen } from "@testing-library/react";
-import Counter from "./Counter";
+import { render, screen } from '@testing-library/react';
+import Counter from './Counter';
 
-describe("<Counter />", () => {
-  //   describe("Display numbers on screen", () => {
-  it("Should display a number that has length 9", () => {
-    //       const amount = 123456789;
-    //       const point = <span>.</span>;
-    //       const { getByRole } = render(<Counter amount={amount} />);
-    //       const textNumber = getByRole("heading");
-    //       screen.getByText((content, element) => {
-    //         console.log("Content:", content);
-    //         console.log("Element", element);
-    //       });
-    //       //   console.log(textNumber);
+describe('<Counter />', () => {
+  describe('Display numbers on screen', () => {
+    it("Should display '000.000.000' if there's no amount to show", () => {
+      let amount = 0;
+
+      const container = render(<Counter amount={amount} />).container;
+      expect(screen.getByText('000.000.000')).toBeInTheDocument();
+    });
   });
-  //   });
+
+  describe('Display measure unit texts on screen', () => {
+    it('Should display texts referring to millions, thousands and unities', () => {
+      let amount = 0;
+
+      const container = render(<Counter amount={amount} />).container;
+      expect(screen.getByText('Milhões')).toBeInTheDocument();
+      expect(screen.getByText('Milhares')).toBeInTheDocument();
+      expect(screen.getByText('Unidades')).toBeInTheDocument();
+    });
+  });
 });

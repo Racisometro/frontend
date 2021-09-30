@@ -1,23 +1,22 @@
+import styles from './Counter.module.css';
+
 const Counter: React.FC<{ amount: number }> = (props) => {
-  const formatCounter = (amount: number) => {
-    const point = <span>.</span>;
+  // TODO: create a function to fulfill the counter properly. Use padStart()!
+  const counterText = '000.000.000';
 
-    const textAmount = amount.toString();
-    const highestValue = textAmount.substr(0, 3);
-    const mediumValue = textAmount.substr(3, 3);
-    const lowestValue = textAmount.substr(6, 3);
-
-    return (
-      <h1>
-        {highestValue}
-        {point}
-        {mediumValue}
-        {point}
-        {lowestValue}
-      </h1>
-    );
-  };
-
-  return <div>{formatCounter(props.amount)}</div>;
+  const higestValueText = 'Milhões';
+  const secondBiggerValueText = 'Milhares';
+  const lowestValueText = 'Unidades';
+  return (
+    <div className={styles.counter}>
+      <h1 className={styles['counter__number']}>{counterText}</h1>
+      <div className={styles['counter__text']}>
+        <span>{higestValueText}</span>
+        <span>{secondBiggerValueText}</span>
+        <span>{lowestValueText}</span>
+      </div>
+    </div>
+  );
 };
+
 export default Counter;
