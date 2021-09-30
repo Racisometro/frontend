@@ -1,12 +1,17 @@
+import { screen } from '@testing-library/dom';
+import { render } from '@testing-library/react';
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router';
 import App from './App';
 
 describe('<App/>', () => {
-  beforeEach(() => render(<App />));
-  
-  it('Should display the project logo', () => {
-    // const logo = screen.getByRole('img');
-    // expect(logo).toHaveAttribute('alt', 'Racismômetro');
+  it("should display the Home component when routing to '/'", () => {
+    const container = render(
+      <MemoryRouter initialEntries={['/']}>
+        <App />
+      </MemoryRouter>
+    ).container;
+
+    expect(screen.getByTestId('home-component')).toBeTruthy();
   });
 });
