@@ -21,7 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall":"tsc"
   },
   "eslintConfig": {
     "extends": [
@@ -43,7 +44,7 @@
   },
   "devDependencies": {
     "@types/react-dom": "^17.0.9",
-     "@types/react-router": "^5.1.16",
-     "@types/react-router-dom": "^5.3.0"
+    "@types/react-router": "^5.1.16",
+    "@types/react-router-dom": "^5.3.0"
   }
 }
