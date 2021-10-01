@@ -30,7 +30,7 @@ const Footer = () => {
           <div className={classes['content']}>
             <h3 className={classes['content__title']}>Apoio:</h3>
             <div className={classes['content__images']}>
-              <a href="#">
+              <a href="http://www.thoughtworks.com">
                 <img src={twSrc} alt="Thoughtworks Logo" />
               </a>
             </div>
