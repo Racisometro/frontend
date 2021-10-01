@@ -13,13 +13,13 @@ const Footer = () => {
           <div className={classes['content']}>
             <h3 className={classes['content__title']}>Nossas redes:</h3>
             <div className={classes['content__images']}>
-              <a href="#">
+              <a href="http://www.facebook.com">
                 <img src={facebookSrc} alt="Facebook Logo" />
               </a>
-              <a href="#">
+              <a href="http://www.twitter.com">
                 <img src={twitterSrc} alt="Twitter Logo" />
               </a>
-              <a href="#">
+              <a href="http://www.instagram.com">
                 <img src={instagramSrc} alt="Instagram Logo" />
               </a>
             </div>
