@@ -2,16 +2,23 @@
   font-family: Inter;
   font-style: normal;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   font-size: 100%;
 }
 
+.counter__block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .counter__number {
   font-weight: 600;
   color: #2e294d;
+  margin-bottom: 0;
 }
 
 .counter__text {
@@ -24,6 +31,11 @@
   justify-content: space-around;
 }
 
+.counter__point {
+  font-weight: normal;
+  color: #ffae00;
+}
+
 @media screen and (max-width: 768px) {
   .counter__number {
     font-size: 40px;
@@ -33,9 +45,13 @@
     font-size: 12px;
     line-height: 15px;
   }
+  .counter__point {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
-@media screen and (min-width: 760px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .counter__number {
     font-size: 80px;
     line-height: 97px;
@@ -43,6 +59,10 @@
   .counter__text {
     font-size: 16px;
     line-height: 19px;
+  }
+  .counter__point {
+    font-size: 80px;
+    line-height: 97px;
   }
 }
 
@@ -55,5 +75,9 @@
   .counter__text {
     font-size: 16px;
     line-height: 19px;
+  }
+  .counter__point {
+    font-size: 80px;
+    line-height: 97px;
   }
 }
