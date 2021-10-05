@@ -1,11 +1,11 @@
-import classes from './Header.module.css';
+import styles from './Header.module.css';
 
 const Header = () => {
   const srcUrl = `${process.env.PUBLIC_URL}/assets/logo.svg`;
   return (
-    <header className={classes.header}>
-      <div className={classes.header__main}>
-        <img className={classes.logo} src={srcUrl} alt="Racismômetro" />
+    <header className={styles.header}>
+      <div className={styles.header__main}>
+        <img className={styles.logo} src={srcUrl} alt="Racismômetro" />
       </div>
     </header>
   );

@@ -1,0 +1,60 @@
+  .about-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .about-header__icon {
+    margin-right: 0.5rem;
+    color: #707070;
+  }
+
+  .about-header__title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    color: #707070;
+  }
+  
+  p {
+    font-family: Inter;
+    font-style: normal;
+    color: #2E294D;
+  }
+
+ 
+  @media screen and (max-width: 768px) {    
+    .about {
+      margin-bottom: 2rem;
+    } 
+
+    .about-header__title {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .about {
+      margin-bottom: 3rem;
+    }  
+    
+    .about-header__title {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  
+  @media screen and (min-width: 1025px) {
+    .about {
+      margin-bottom: 3rem;
+    }  
+
+    .about-header__title {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }

@@ -8,7 +8,7 @@ const CounterDisplay: React.FC = (props) => {
   const secondFilter = '08/09/21';
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} data-testid="counter-display-component">
       <div className={styles['upper-components']}>
         <Counter amount={amount} />
       </div>

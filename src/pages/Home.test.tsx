@@ -1,15 +1,18 @@
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { Container } from "react-dom";
 import Home from "./Home";
 
 describe("<Home />", () => {
-  // exibir contador
-  //   let container: Container;
-  //   beforeEach(() => {
-  //     container = render(<Home />).container;
-  //   });
-  it("Should display counter", () => {
-    //     expect(container.contains(<Counter />)).toBeTruthy();
+  let container: Container;
+  beforeEach(() => {
+    container = render(<Home />).container;
   });
-  //should display about
+
+  it("Should display counter", () => {
+    expect(screen.getByTestId('counter-display-component')).toBeTruthy();
+  });
+
+  it("Should display about", () => {
+    expect(screen.getByTestId('about-component')).toBeTruthy();
+  });
 });

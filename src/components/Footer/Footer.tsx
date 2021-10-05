@@ -1,5 +1,5 @@
 import Card from '../../ui/Card/Card';
-import classes from './Footer.module.css';
+import styles from './Footer.module.css';
 
 const Footer = () => {
   const facebookSrc = process.env.PUBLIC_URL + '/assets/face-icon.svg';
@@ -9,10 +9,10 @@ const Footer = () => {
   return (
     <footer>
       <Card>
-        <div className={classes.container}>
-          <div className={classes['content']}>
-            <h3 className={classes['content__title']}>Nossas redes:</h3>
-            <div className={classes['content__images']}>
+        <div className={styles.container}>
+          <div className={styles['content']}>
+            <h3 className={styles['content__title']}>Nossas redes:</h3>
+            <div className={styles['content__images']}>
               <a href="http://www.facebook.com">
                 <img src={facebookSrc} alt="Facebook Logo" />
               </a>
@@ -27,9 +27,9 @@ const Footer = () => {
 
           <hr />
 
-          <div className={classes['content']}>
-            <h3 className={classes['content__title']}>Apoio:</h3>
-            <div className={classes['content__images']}>
+          <div className={styles['content']}>
+            <h3 className={styles['content__title']}>Apoio:</h3>
+            <div className={styles['content__images']}>
               <a href="http://www.thoughtworks.com">
                 <img src={twSrc} alt="Thoughtworks Logo" />
               </a>
