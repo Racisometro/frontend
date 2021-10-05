@@ -11,7 +11,8 @@ const About: React.FC = (props) => {
           <FiInfo className={styles['about-header__icon']} />
           <h3 className={styles['about-header__title']}> O projeto Racismômetro</h3>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure molestias eius error quidem perspiciatis facilis, veniam optio magni, veritatis quam, amet ab! Reprehenderit quasi quas eligendi quisquam vero beatae magni.</p>
+        <p>Inconformadas com o crime de racismo, e com a falta de políticas públicas eficazes para eliminação deste crime, o Racismômetro foi desenvolvido para apoiar o empoderamento dos depoentes e promover a ruptura do cenário racista vivido no Brasil.</p>
+        <p>O Racismômetro é uma ferramenta visual do quantitativo de depoimentos de casos de racismo publicados nas redes sociais mais utilizadas no Brasil. Nosso objetivo é que o Racismômetro sirva de referência para a obtenção de dados concretos e confiáveis a respeito de atos racistas cotidianos.</p>
       </Card>
     </div>
   );
