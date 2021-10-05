@@ -13,13 +13,13 @@ const Footer = () => {
           <div className={styles['content']}>
             <h3 className={styles['content__title']}>Nossas redes:</h3>
             <div className={styles['content__images']}>
-              <a href="http://www.facebook.com" target="_blank">
+              <a href="http://www.facebook.com" target="_blank" rel="noreferrer">
                 <img src={facebookSrc} alt="Facebook Logo" />
               </a>
-              <a href="https://twitter.com/racismometro" target="_blank">
+              <a href="https://twitter.com/racismometro" target="_blank" rel="noreferrer">
                 <img src={twitterSrc} alt="Twitter Logo" />
               </a>
-              <a href="https://www.instagram.com/racismometro" target="_blank">
+              <a href="https://www.instagram.com/racismometro" target="_blank" rel="noreferrer">
                 <img src={instagramSrc} alt="Instagram Logo" />
               </a>
             </div>
