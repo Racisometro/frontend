@@ -6,6 +6,29 @@ const Footer = () => {
   const instagramSrc = process.env.PUBLIC_URL + '/assets/insta-icon.svg';
   const twitterSrc = process.env.PUBLIC_URL + '/assets/twitter-icon.svg';
   const twSrc = process.env.PUBLIC_URL + '/assets/tw-logo.svg';
+  const logoTW = false;
+
+  function renderLogo(){
+    if(logoTW) {
+      return (
+        <div className={styles['content']}>
+          <h3 className={styles['content__title']}>Apoio:</h3>
+          <div className={styles['content__images']}>
+            <a href="http://www.thoughtworks.com">
+              <img src={twSrc} alt="Thoughtworks Logo" />
+            </a>
+          </div>
+        </div>
+      );
+    }
+    return null;
+  }
+
+  function renderHR(){
+    if(logoTW) 
+      return <hr />;
+  }
+
   return (
     <footer>
       <Card>
@@ -25,16 +48,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <hr />
-
-          <div className={styles['content']}>
-            <h3 className={styles['content__title']}>Apoio:</h3>
-            <div className={styles['content__images']}>
-              <a href="http://www.thoughtworks.com">
-                <img src={twSrc} alt="Thoughtworks Logo" />
-              </a>
-            </div>
-          </div>
+          { renderHR() }
+          
+          { renderLogo() }
         </div>
       </Card>
     </footer>

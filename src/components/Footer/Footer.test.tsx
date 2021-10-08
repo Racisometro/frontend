@@ -19,7 +19,7 @@ describe('<Footer/>', () => {
     expect(
       screen.getByRole('heading', { name: 'Nossas redes:' })
     ).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: 'Apoio:' })).toBeInTheDocument();
+    // expect(screen.getByRole('heading', { name: 'Apoio:' })).toBeInTheDocument();
   });
 
   it('Should display the social media buttons', () => {
@@ -33,8 +33,8 @@ describe('<Footer/>', () => {
     expect(instagram_logo.closest('a')).toHaveAttribute('href', 'https://www.instagram.com/racismometro');
   });
   
-  it("Should display the supporter's icons", () => {
-    const tw_logo = screen.getByAltText('Thoughtworks Logo');
-    expect(tw_logo).toBeInTheDocument();
-  });
+  // it("Should display the supporter's icons", () => {
+  //   const tw_logo = screen.getByAltText('Thoughtworks Logo');
+  //   expect(tw_logo).toBeInTheDocument();
+  // });
 });
