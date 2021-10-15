@@ -9,4 +9,12 @@ describe('<CounterDisplay/>', () => {
   it('should render the Counter component', () => {
     expect(screen.getByTestId('counter-component')).toBeTruthy();
   });
+
+  it('should render the Filters component', () => {
+    expect(screen.getByTestId('filters-component')).toBeTruthy();
+  });
+
+  it('should render the GoldenBorderBox component', () => {
+    expect(screen.getByTestId('golden-border-box-component')).toBeTruthy();
+  });
 });

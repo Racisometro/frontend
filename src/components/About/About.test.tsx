@@ -12,6 +12,6 @@ describe('<About/>', () => {
   });
 
   it('Should display the paragraph', () => {
-    expect(document.querySelector('p')).toBeInTheDocument();
+    expect(document.querySelectorAll('p')).toHaveLength(2)
   });
 });
