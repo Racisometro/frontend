@@ -11,7 +11,7 @@ describe('<About/>', () => {
     expect(screen.getByText(title)).toBeInTheDocument();
   });
 
-  it('Should display the paragraph', () => {
-    expect(document.querySelectorAll('p')).toHaveLength(2)
+  it('Should display the paragraphs', () => {
+    expect(document.querySelectorAll('p')).toHaveLength(2);
   });
 });
