@@ -23,7 +23,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postinstall": "tsc"
+    "postinstall": "tsc",
+    "cypress:open": "cypress open"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +47,7 @@
   "devDependencies": {
     "@types/react-dom": "^17.0.9",
     "@types/react-router": "^5.1.16",
-    "@types/react-router-dom": "^5.3.0"
+    "@types/react-router-dom": "^5.3.0",
+    "cypress": "^8.6.0"
   }
 }
