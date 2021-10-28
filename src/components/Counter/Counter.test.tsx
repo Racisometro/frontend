@@ -7,7 +7,7 @@ describe('<Counter />', () => {
       let amount = 0;
 
       const container = render(<Counter amount={amount} />).container;
-      // expect(screen.getByText('000.000.000')).toBeInTheDocument();
+      
       expect(container.querySelector('#left-numbers')?.innerHTML).toEqual(
         '000'
       );
@@ -20,14 +20,14 @@ describe('<Counter />', () => {
     });
   });
 
-  // describe('Display measure unit texts on screen', () => {
-  //   it('Should display texts referring to millions, thousands and unities', () => {
-  //     let amount = 0;
+  describe('Display measure unit texts on screen', () => {
+    it('Should display texts referring to millions, thousands and unities', () => {
+      let amount = 0;
 
-  //     const container = render(<Counter amount={amount} />).container;
-  //     expect(screen.getByText('Milhões')).toBeInTheDocument();
-  //     expect(screen.getByText('Milhares')).toBeInTheDocument();
-  //     expect(screen.getByText('Unidades')).toBeInTheDocument();
-  //   });
-  // });
+      const container = render(<Counter amount={amount} />).container;
+      expect(screen.getByText('Milhões')).toBeInTheDocument();
+      expect(screen.getByText('Milhares')).toBeInTheDocument();
+      expect(screen.getByText('Unidades')).toBeInTheDocument();
+    });
+  });
 });

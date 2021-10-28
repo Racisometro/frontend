@@ -6,7 +6,7 @@ const Filters: React.FC<{ firstFilter: string; secondFilter: string }> = (
   props
 ) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} data-testid="filters-component">
       <TimeFilter
         firstFilter={props.firstFilter}
         secondFilter={props.secondFilter}
